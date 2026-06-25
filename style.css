@@ -1,0 +1,314 @@
+/* ==========================================================================
+   1. Base Reset & Brand Core Settings
+   ========================================================================== */
+   * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: #F4F0EA; /* Alabaster Linen */
+    color: #232323;            /* Raw Charcoal */
+    font-family: 'Inter', sans-serif;
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+/* ==========================================================================
+   2. Header & Navigation Elements
+   ========================================================================== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10%;
+    width: 100%;
+}
+
+.logo-img {
+    height: 120px;       /* Scale your custom logo file perfectly */
+    width: auto;
+    object-fit: contain;
+}
+
+nav a {
+    margin-left: 2rem;
+    text-decoration: none;
+    color: #232323;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #5A6454; /* Aged Cardamom on hover */
+}
+
+/* ==========================================================================
+   3. Hero Identity Block
+   ========================================================================== */
+.hero {
+    text-align: center;
+    padding: 8rem 10% 6rem 10%;
+}
+
+.hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.hero em {
+    color: #5A6454; /* Aged Cardamom Accent */
+    font-style: italic;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    font-weight: 300;
+    color: #4a4a4a;
+}
+
+/* ==========================================================================
+   4. Story / About Grid Block
+   ========================================================================== */
+   .about-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6rem;
+    max-width: 1600px;  /* Kept safe and perfectly aligned with the rest of your website */
+    margin: 4rem auto;
+    padding: 0 10%;
+    width: 100%;
+
+}
+
+.about-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.about-content h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.75rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.about-content p {
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+    color: #4a4a4a;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Story Section Image Styling - Corrected Balanced Wide Layout */
+/* Story Section Image Styling - Stable Wide Layout */
+.story-img {
+    width: 100%;         
+    max-width: 100%;     /* Fills the newly expanded column perfectly */
+    height: 380px;       /* Sets a beautiful, elegant height */
+    object-fit: cover;   
+    border-radius: 2px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.02);
+    display: block;
+}
+/* ==========================================================================
+   5. Corrected Alternating Rows Engine
+   ========================================================================== */
+.offerings-container {
+    max-width: 1400px;
+    margin: 12rem auto 4rem auto; /* Deep structural breathing room */
+    padding: 0 10%;
+    width: 100%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 8rem;
+}
+
+.section-title h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.01em;
+    font-weight: 500;
+}
+
+.section-title p {
+    font-size: 1.1rem;
+    color: #5A6454;
+    font-style: italic;
+}
+
+/* Flexbox Engine: Forces safe 50/50 block tracking without collapsing text */
+.premium-row {
+    display: flex;
+    align-items: center;
+    gap: 6rem; 
+    margin-bottom: 10rem;
+    width: 100%;
+}
+
+.row-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.row-image {
+    flex: 1;
+    min-width: 0;
+    position: relative;
+    background-color: #E0DCD5;
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.02);
+}
+
+/* Alternating Row-Reverse Handler */
+.premium-row.reverse {
+    flex-direction: row-reverse; 
+}
+
+/* Text & Headings inside Rows */
+.row-text h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.01em;
+}
+
+.row-text p {
+    font-size: 1.05rem;
+    color: #4a4a4a;
+    line-height: 1.8;
+}
+
+/* Imagery Rendering Configuration */
+.row-image img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+}
+
+.img-fallback {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7a756c;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    pointer-events: none;
+}
+
+/* ==========================================================================
+   6. Conversion Block & Footer Settings
+   ========================================================================== */
+.cta-section {
+    text-align: center;
+    max-width: 750px;
+    margin: 12rem auto 6rem auto;
+    padding: 0 2rem;
+}
+
+.cta-section h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.75rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.cta-section p {
+    font-size: 1.1rem;
+    color: #555555;
+    margin-bottom: 3rem;
+    line-height: 1.8;
+}
+
+/* Premium Contact Links Layout */
+.contact-channels {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+    flex-wrap: wrap; /* Allows stacking cleanly on narrow mobile displays */
+}
+
+.contact-link {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #232323;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid #5A6454; /* Subtitle line in Aged Cardamom */
+    padding-bottom: 4px;
+    transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #5A6454;
+    border-bottom-color: #232323; /* Alternates line tint smoothly on hover */
+}
+
+.contact-divider {
+    color: #5A6454;
+    font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    .contact-channels {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+    .contact-divider {
+        display: none; /* Removes the vertical separator on mobile phones */
+    }
+}
+
+footer {
+    text-align: center;
+    margin-top: 8rem;
+    padding-bottom: 4rem;
+    font-size: 0.8rem;
+    color: #5A6454;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+/* ==========================================================================
+   7. Smooth Fluid Grid Overrides (Mobile Setup)
+   ========================================================================== */
+@media (max-width: 900px) {
+    header { padding: 2rem 5%; }
+    .about-grid, .premium-row, .premium-row.reverse {
+        flex-direction: column; /* Collapses elements linearly downwards on tablets/phones */
+        gap: 3rem;
+        margin-bottom: 6rem;
+        padding: 0 5%;
+    }
+    .offerings-container { padding: 0 5%; margin-top: 6rem; }
+    .section-title { margin-bottom: 4rem; }
+    .row-image img, .img-fallback { height: 320px; }
+    .hero h1 { font-size: 2.75rem; }
+}
